@@ -23,7 +23,7 @@ class ProductManager{
         return this.products
     }
     getProductById(){
-        //retornar el producto que cuente con este id
+        //retornar producto que cuente con este id
         //utilizar find()
     }
 }
