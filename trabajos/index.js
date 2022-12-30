@@ -37,7 +37,8 @@ let codigo = productsArray.find((producto) => product.code === producto.code)
     }
     getProducts(){
         if(fs.existsSync("./productos.json")){
-           console.log(JSON.parse(fs.readFileSync("./productos.json", "utf-8"))) 
+            console.log(JSON.parse(fs.readFileSync("./productos.json", "utf-8")))
+           return JSON.parse(fs.readFileSync("./productos.json", "utf-8"))
         }else{
             console.log(productsArray)
         }
